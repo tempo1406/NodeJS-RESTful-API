@@ -1,7 +1,6 @@
 import db from "../models";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { raw } from "mysql2";
 
 const hashPassword = (password) =>
     bcrypt.hashSync(password, bcrypt.genSaltSync(8));
@@ -32,13 +31,12 @@ export const register = ({ email, password }) =>
             resolve({
                 err: response[1] ? 0 : 1,
                 mes: response[1] ? "Register success" : "Email already exists",
-                access_token: `Bearer ${token}`,
+                access_token: token ? `Bearer ${token}` : token,
             });
             resolve({
                 error: 0,
                 mes: "Register success",
             });
-            console.log("after register service");
         } catch (error) {
             reject(error);
         }
@@ -68,8 +66,12 @@ export const login = ({ email, password }) =>
                 : null;
             resolve({
                 err: token ? 0 : 1,
-                mes: token ? "Login success" : response ? "Wrong password" : "Email not found",
-                access_token: token ? `Bearer ${token}` :  token,
+                mes: token
+                    ? "Login success"
+                    : response
+                    ? "Wrong password"
+                    : "Email not found",
+                access_token: token ? `Bearer ${token}` : token,
             });
             resolve({
                 error: 0,
