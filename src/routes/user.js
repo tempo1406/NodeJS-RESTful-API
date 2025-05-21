@@ -1,7 +1,12 @@
+import * as controllers from '../controllers';
 import express from 'express';
-import * as userController from '../controllers/user';
+import verifyToken from '../middlewares/verify_token';
+import { isAdmin, isModeratorOrAdmin } from '../middlewares/verify_roles';
 
 const router = express.Router();
-router.get('/', userController.getUser);
+
+// router.use(verifyToken);
+// router.use(isModeratorOrAdmin);
+router.get('/',[verifyToken, isModeratorOrAdmin], controllers.getCurrent);
 
 export default router;

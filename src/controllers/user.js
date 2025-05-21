@@ -1,7 +1,13 @@
-const getUser = async(req, res) => {
-    return res.send('user controller');
-}
+import { response } from "express";
+import { badRequest, internalServerError } from "../middlewares/handle_error";
+import * as services from "../services";
 
-module.exports = {
-    getUser
+export const getCurrent = async (req, res) => {
+    try {
+        const {id} = req.user;
+        const response = await services.getOne(id);
+        return res.status(200).json(response)
+    } catch (error) {
+        return internalServerError(res)
+    }
 }
