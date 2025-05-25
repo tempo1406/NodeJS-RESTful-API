@@ -3,6 +3,7 @@ import db from "../models";
 import { Op } from "sequelize";
 import { defaults } from "joi";
 import { v4 } from "uuid";
+const cloudinary = require("cloudinary").v2;
 
 export const getBooks = ({ page, limit, order, name, available, ...query }) =>
     new Promise(async (resolve, reject) => {
@@ -22,7 +23,7 @@ export const getBooks = ({ page, limit, order, name, available, ...query }) =>
                 where: query,
                 ...queries,
                 attributes: {
-                    exclude: ['category_code']
+                    exclude: ["category_code"],
                 },
                 include: [
                     {
@@ -42,21 +43,30 @@ export const getBooks = ({ page, limit, order, name, available, ...query }) =>
         }
     });
 
-    export const createNewBook = (body) =>
+export const createNewBook = (body, fileData) =>
     new Promise(async (resolve, reject) => {
         try {
             const response = await db.Book.findOrCreate({
-                where: { title: body?.title},
+                where: { title: body?.title },
                 defaults: {
                     ...body,
                     id: v4(),
+                    image: fileData?.path,
                 },
             });
             resolve({
                 err: response[1] ? 0 : 1,
-                mes: response[1] ? "Create book success" : "Book already exists",
+                mes: response[1]
+                    ? "Create book success"
+                    : "Book already exists",
             });
+            if (fileData && !response[1]) {
+                cloudinary.uploader.destroy(fileData.filename);
+            }
         } catch (error) {
             reject(error);
+            if (fileData) {
+                cloudinary.uploader.destroy(fileData.filename);
+            }
         }
     });
