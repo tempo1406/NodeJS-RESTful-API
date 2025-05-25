@@ -33,10 +33,6 @@ export const register = ({ email, password }) =>
                 mes: response[1] ? "Register success" : "Email already exists",
                 access_token: token ? `Bearer ${token}` : token,
             });
-            resolve({
-                error: 0,
-                mes: "Register success",
-            });
         } catch (error) {
             reject(error);
         }

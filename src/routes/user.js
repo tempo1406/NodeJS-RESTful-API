@@ -7,6 +7,6 @@ const router = express.Router();
 
 // router.use(verifyToken);
 // router.use(isModeratorOrAdmin);
-router.get('/',[verifyToken, isModeratorOrAdmin], controllers.getCurrent);
+router.get('/',[verifyToken], controllers.getCurrent);
 
 export default router;
