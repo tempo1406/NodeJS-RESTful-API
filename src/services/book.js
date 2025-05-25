@@ -23,7 +23,7 @@ export const getBooks = ({ page, limit, order, name, available, ...query }) =>
                 where: query,
                 ...queries,
                 attributes: {
-                    exclude: ["category_code"],
+                    exclude: ["category_code", "description"],
                 },
                 include: [
                     {
@@ -52,6 +52,7 @@ export const createNewBook = (body, fileData) =>
                     ...body,
                     id: v4(),
                     image: fileData?.path,
+                    filename: fileData?.filename,
                 },
             });
             resolve({
@@ -68,5 +69,49 @@ export const createNewBook = (body, fileData) =>
             if (fileData) {
                 cloudinary.uploader.destroy(fileData.filename);
             }
+        }
+    });
+
+export const updateBook = ({ bid, ...body }, fileData) =>
+    new Promise(async (resolve, reject) => {
+        try {
+            if (fileData) body.image = fileData?.path;
+            const response = await db.Book.update(body, {
+                where: { id: bid },
+            });
+            resolve({
+                err: response[0] > 0 ? 0 : 1,
+                mes:
+                    response[0] > 0
+                        ? `${response[0]} book updated successfully`
+                        : "Book not found",
+            });
+            if (fileData && !response[0] === 0) {
+                cloudinary.uploader.destroy(fileData.filename);
+            }
+        } catch (error) {
+            reject(error);
+            if (fileData) {
+                cloudinary.uploader.destroy(fileData.filename);
+            }
+        }
+    });
+
+export const deleteBook = (bids, filename) =>
+    new Promise(async (resolve, reject) => {
+        console.log({bids, filename});
+        try {
+            const response = await db.Book.destroy({
+                where: { id: bids },
+            });
+            resolve({
+                err: response > 0 ? 0 : 1,
+                mes: response > 0
+                    ? `${response} book deleted successfully`
+                    : "Book not found",
+            });
+                cloudinary.api.delete_resources(filename)
+        } catch (error) {
+            reject(error);
         }
     });
