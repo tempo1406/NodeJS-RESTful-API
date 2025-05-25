@@ -25,7 +25,10 @@ module.exports = {
                 type: Sequelize.STRING,
                 defaultValue: "R3",
             },
-           createdAt: {
+            refresh_token: {
+                type: Sequelize.STRING,
+            },
+            createdAt: {
                 allowNull: false,
                 type: 'TIMESTAMP',
                 defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
