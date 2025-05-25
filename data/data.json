@@ -1,0 +1,372 @@
+{
+  "travel": [
+    {
+      "bookTitle": "Adventures in the Himalayas",
+      "bookPrice": "35.20",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "Experience the breathtaking views of the Himalayan mountains.",
+      "upc": "1234567890"
+    },
+    {
+      "bookTitle": "The Great European Train Journeys",
+      "bookPrice": "40.50",
+      "available": 8,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "Discover Europe's scenic landscapes through train travel.",
+      "upc": "0987654321"
+    },
+    {
+      "bookTitle": "Around the World in 80 Days",
+      "bookPrice": "25.30",
+      "available": 15,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "Follow the classic adventure through multiple continents.",
+      "upc": "5678901234"
+    },
+    {
+      "bookTitle": "Backpacking Southeast Asia",
+      "bookPrice": "20.99",
+      "available": 7,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "Tips and tricks for a budget-friendly Southeast Asia trip.",
+      "upc": "9087654321"
+    },
+    {
+      "bookTitle": "Safari Adventures in Africa",
+      "bookPrice": "45.00",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "Explore the vast savannas and diverse wildlife of Africa.",
+      "upc": "2233445566"
+    },
+    {
+      "bookTitle": "Exploring the Arctic",
+      "bookPrice": "30.75",
+      "available": 9,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Learn about the icy landscapes and survival tips in the Arctic.",
+      "upc": "3344556677"
+    },
+    {
+      "bookTitle": "The Wonders of South America",
+      "bookPrice": "28.90",
+      "available": 14,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "Discover South America's natural and cultural wonders.",
+      "upc": "4455667788"
+    },
+    {
+      "bookTitle": "The Pacific: A Journey Through Islands",
+      "bookPrice": "32.50",
+      "available": 11,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "Explore the hidden gems of the Pacific Islands.",
+      "upc": "5566778899"
+    },
+    {
+      "bookTitle": "Mountains of the World",
+      "bookPrice": "38.80",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "Learn about the tallest peaks and the cultures around them.",
+      "upc": "6677889900"
+    },
+    {
+      "bookTitle": "Historic Landmarks in Asia",
+      "bookPrice": "29.99",
+      "available": 6,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "A guide to Asia's most iconic historical sites.",
+      "upc": "7788990011"
+    }
+  ],
+  "food": [
+    {
+      "bookTitle": "The Art of French Cooking",
+      "bookPrice": "29.99",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "Master the art of French cuisine with this step-by-step guide.",
+      "upc": "2233445566"
+    },
+    {
+      "bookTitle": "Baking the Perfect Cake",
+      "bookPrice": "22.00",
+      "available": 5,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Learn the secrets to creating delicious cakes.",
+      "upc": "3344556677"
+    },
+    {
+      "bookTitle": "Global Street Foods",
+      "bookPrice": "18.90",
+      "available": 20,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "A collection of the best street foods around the world.",
+      "upc": "4455667788"
+    },
+    {
+      "bookTitle": "Vegetarian Delights",
+      "bookPrice": "24.50",
+      "available": 15,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Creative vegetarian recipes for every occasion.",
+      "upc": "5566778899"
+    },
+    {
+      "bookTitle": "Mastering Spices",
+      "bookPrice": "19.75",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "A guide to using spices in cooking.",
+      "upc": "6677889900"
+    }
+  ],
+  "weather": [
+    {
+      "bookTitle": "The Weather Book",
+      "bookPrice": "15.20",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "A comprehensive guide to understanding weather patterns.",
+      "upc": "1234567890"
+    },
+    {
+      "bookTitle": "Weather in the Wild",
+      "bookPrice": "18.50",
+      "available": 7,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Exploring extreme weather in wilderness survival situations.",
+      "upc": "0987654321"
+    },
+    {
+      "bookTitle": "The Science of Storms",
+      "bookPrice": "20.75",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "A look into the science behind tornadoes and hurricanes.",
+      "upc": "5678901234"
+    },
+    {
+      "bookTitle": "Clouds and Climate",
+      "bookPrice": "22.00",
+      "available": 8,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "Understanding the role of clouds in weather and climate.",
+      "upc": "9087654321"
+    },
+    {
+      "bookTitle": "Forecasting the Future",
+      "bookPrice": "25.00",
+      "available": 5,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "Learn how weather forecasts are made and their accuracy.",
+      "upc": "2233445566"
+    },
+    {
+      "bookTitle": "The Weather Whiz",
+      "bookPrice": "14.30",
+      "available": 11,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "A fun and educational guide for young weather enthusiasts.",
+      "upc": "3344556677"
+    },
+    {
+      "bookTitle": "Hurricanes: Nature's Fury",
+      "bookPrice": "30.60",
+      "available": 9,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "An in-depth look at the most powerful storms on Earth.",
+      "upc": "4455667788"
+    },
+    {
+      "bookTitle": "Exploring Tornado Alley",
+      "bookPrice": "17.45",
+      "available": 6,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "A personal account of living through tornado season in the U.S.",
+      "upc": "5566778899"
+    },
+    {
+      "bookTitle": "Weather Patterns Across the Globe",
+      "bookPrice": "21.80",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "A global perspective on the variety of weather phenomena.",
+      "upc": "6677889900"
+    },
+    {
+      "bookTitle": "The Nature of Lightning",
+      "bookPrice": "19.99",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Explore the science behind lightning and thunder.",
+      "upc": "7788990011"
+    }
+  ],
+  "math": [
+    {
+      "bookTitle": "Mathematics for Beginners",
+      "bookPrice": "12.99",
+      "available": 14,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "An introductory guide to basic mathematical concepts.",
+      "upc": "1234567890"
+    },
+    {
+      "bookTitle": "Advanced Algebra",
+      "bookPrice": "18.50",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Dive deep into algebraic equations and their solutions.",
+      "upc": "0987654321"
+    },
+    {
+      "bookTitle": "Geometry in Nature",
+      "bookPrice": "24.30",
+      "available": 8,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "Discover how geometric shapes appear in the natural world.",
+      "upc": "5678901234"
+    },
+    {
+      "bookTitle": "Calculus for Engineers",
+      "bookPrice": "28.00",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "A thorough guide to calculus applications in engineering.",
+      "upc": "9087654321"
+    },
+    {
+      "bookTitle": "The Art of Mathematical Proof",
+      "bookPrice": "35.00",
+      "available": 9,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "Learn how to prove theorems and understand mathematical logic.",
+      "upc": "2233445566"
+    },
+    {
+      "bookTitle": "Mathematics of Finance",
+      "bookPrice": "19.99",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Understanding financial mathematics for personal and business growth.",
+      "upc": "3344556677"
+    },
+    {
+      "bookTitle": "Statistics Made Simple",
+      "bookPrice": "17.20",
+      "available": 11,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "A beginner-friendly guide to basic statistics concepts.",
+      "upc": "4455667788"
+    },
+    {
+      "bookTitle": "The Logic of Numbers",
+      "bookPrice": "22.50",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "Explore the fascinating world of mathematical logic and its applications.",
+      "upc": "5566778899"
+    },
+    {
+      "bookTitle": "Mathematics of the Universe",
+      "bookPrice": "40.00",
+      "available": 8,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "Explore how mathematics explains the universe around us.",
+      "upc": "6677889900"
+    },
+    {
+      "bookTitle": "Quantum Mathematics",
+      "bookPrice": "50.00",
+      "available": 6,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Dive into the complex world of quantum mathematics.",
+      "upc": "7788990011"
+    }
+  ],
+  "robot": [
+    {
+      "bookTitle": "The Robotics Revolution",
+      "bookPrice": "25.99",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "How robotics is changing industries and society.",
+      "upc": "1234567890"
+    },
+    {
+      "bookTitle": "Building Robots with Python",
+      "bookPrice": "20.30",
+      "available": 7,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "A beginner’s guide to building robots with Python programming.",
+      "upc": "0987654321"
+    },
+    {
+      "bookTitle": "Robotics for Kids",
+      "bookPrice": "17.99",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "An easy-to-understand guide to robotics for young learners.",
+      "upc": "5678901234"
+    },
+    {
+      "bookTitle": "The Future of Robotics",
+      "bookPrice": "35.00",
+      "available": 6,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "Exploring how robotics will shape the future of work and life.",
+      "upc": "9087654321"
+    },
+    {
+      "bookTitle": "AI and Robotics",
+      "bookPrice": "40.00",
+      "available": 9,
+      "imageUrl": "http://books.toscrape.com/media/cache/6d/41/6d418a73cc7d4ecfd75ca11d854841db.jpg",
+      "bookDescription": "A look at the intersection of artificial intelligence and robotics.",
+      "upc": "2233445566"
+    },
+    {
+      "bookTitle": "Autonomous Robots",
+      "bookPrice": "30.75",
+      "available": 11,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Designing robots that can think and operate on their own.",
+      "upc": "3344556677"
+    },
+    {
+      "bookTitle": "The Rise of Robotic Technology",
+      "bookPrice": "32.50",
+      "available": 8,
+      "imageUrl": "http://books.toscrape.com/media/cache/c7/1a/c71a85dbf8c2dbc75cb271026618477c.jpg",
+      "bookDescription": "A historical perspective on the development of robotics.",
+      "upc": "4455667788"
+    },
+    {
+      "bookTitle": "Robot Programming for Beginners",
+      "bookPrice": "22.40",
+      "available": 10,
+      "imageUrl": "http://books.toscrape.com/media/cache/fe/8a/fe8af6ceec7718986380c0fde9b3b34f.jpg",
+      "bookDescription": "The basics of programming robots for everyday tasks.",
+      "upc": "5566778899"
+    },
+    {
+      "bookTitle": "The Human-Robot Connection",
+      "bookPrice": "27.99",
+      "available": 12,
+      "imageUrl": "http://books.toscrape.com/media/cache/ca/30/ca30b1afe1e76ce7ba1db8176d398e53.jpg",
+      "bookDescription": "How humans and robots are collaborating in the modern world.",
+      "upc": "6677889900"
+    },
+    {
+      "bookTitle": "Building AI-Powered Robots",
+      "bookPrice": "42.99",
+      "available": 6,
+      "imageUrl": "http://books.toscrape.com/media/cache/8e/3e/8e3e066248bb17edab2184fa6f3676b9.jpg",
+      "bookDescription": "Master the art of integrating AI with robotics.",
+      "upc": "7788990011"
+    }
+  ]
+}

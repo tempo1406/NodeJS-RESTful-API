@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import innitRoutes from './src/routes/index.js';
+import innitRoutes from './src/routes';
 import dotenv from 'dotenv';
 import './connection_database.js';
 
@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 innitRoutes(app)
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, (err) => {
     if (err) {
         console.error(`Error starting server: ${err.message}`);
