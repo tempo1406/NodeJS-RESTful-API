@@ -7,8 +7,8 @@ const router = express.Router();
 
 router.get('/', controllers.getBooks);
 
-// router.use(verifyToken);
-// router.use(isModeratorOrAdmin);
-router.get('/',[verifyToken], controllers.getCurrent);
+router.use(verifyToken);
+router.use(isAdmin);
+router.post('/', controllers.createNewBook);
 
 export default router;

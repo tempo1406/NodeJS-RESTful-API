@@ -1,6 +1,8 @@
 import { raw } from "mysql2";
 import db from "../models";
 import { Op } from "sequelize";
+import { defaults } from "joi";
+import { v4 } from "uuid";
 
 export const getBooks = ({ page, limit, order, name, available, ...query }) =>
     new Promise(async (resolve, reject) => {
@@ -19,11 +21,40 @@ export const getBooks = ({ page, limit, order, name, available, ...query }) =>
             const response = await db.Book.findAndCountAll({
                 where: query,
                 ...queries,
+                attributes: {
+                    exclude: ['category_code']
+                },
+                include: [
+                    {
+                        model: db.Category,
+                        attributes: { exclude: ["createdAt", "updatedAt"] },
+                        as: "categoryData",
+                    },
+                ],
             });
             resolve({
                 err: response ? 0 : 1,
                 mes: response ? "Get book success" : "Book not found",
                 bookData: response,
+            });
+        } catch (error) {
+            reject(error);
+        }
+    });
+
+    export const createNewBook = (body) =>
+    new Promise(async (resolve, reject) => {
+        try {
+            const response = await db.Book.findOrCreate({
+                where: { title: body?.title},
+                defaults: {
+                    ...body,
+                    id: v4(),
+                },
+            });
+            resolve({
+                err: response[1] ? 0 : 1,
+                mes: response[1] ? "Create book success" : "Book already exists",
             });
         } catch (error) {
             reject(error);
